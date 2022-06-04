@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+          <a href="#" class="link">toyyib</a>
+          <nav>
+              <img class="wrong" src="image/close-cross-wrong-svgrepo-com.svg" alt="">
+              <ul>
+                  <li><a href="#">about me</a></li>
+                  <li><a href="main.html">contact</a></li>
+                  <li><a href="reg.html">registration</a></li>
+                  <li><a href="log.html">login</a></li>
+              </ul>
+          </nav>
+          <img class="menu" src="image/menu-svgrepo-com (3).svg" alt="">
+        </header>
+       
+        <section class="feature">
+            <div class="subheader">
+            <h1 class="subheader-text">i'm abdulwaheed toyyib</h1>
+            <p>A web developer, i love to create beautiful and responsive website</p>
+            <p class="paragraph">hobbies- priorities- skills- others</p>
+            <hr class="line">
+            </div>
+            <div class="testimones">
+                <li class="list">
+                    <h3>hobbies</h3>
+                    <p>coding</p>
+                    <p>gaming</p>
+                    <p>tv show</p>
+                </li>
+                <li class="list">
+                    <h3>priorities</h3>
+                    <p>coding</p>
+                    <p>gaming</p>
+                    <p>tv show</p>
+                </li>
+                <li class="list">
+                    <h3>skills</h3>
+                    <p>html</p>
+                    <p>css</p>
+                    <p>javascript</p>
+                </li>
+                <li class="list">
+                    <h3>others</h3>
+                    <p>reading</p>
+                    <p>workout</p>
+                    <p>adventures</p>
+                </li>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <p class="footer-paragraph">created by <span>toyyib</span>@ZURI ACADEMY</p>
+        </footer>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu');
+        const wrong = document.querySelector('.wrong');
+        const nav = document.querySelector('nav');
+        const button = document.querySelector('button')
+
+        menu = addEventListener('click', () =>{
+            nav.classList.add('open-nav')
+        });
+        wrong = addEventListener('click', () =>{
+            nav.classList.remove('open-nav')
+        });
+    </script>
+</body>
+</html>
